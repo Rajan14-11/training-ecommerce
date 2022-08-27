@@ -1,0 +1,88 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 700 2vmax "Roboto";
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  padding-right: 3vmax;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 1.3vmax "Roboto";
+  margin: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+.category-link:hover {
+  color: tomato;
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+@media screen and (max-width: 600px) {
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+  .category-link{
+    font: 400 2vmax "Roboto";
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+}
+
+.main_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.allproducts{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vmax;
+}
+
+.products_box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width:660px) {
+  .main_div{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .allproducts{
+    margin:5px
+  }
+  .products{
+    padding: 0 auto;
+  }
+  .filter_btn{
+    width: 70px;
+  }
+}
